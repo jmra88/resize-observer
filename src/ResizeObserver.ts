@@ -22,7 +22,7 @@ class ResizeObserver {
         this.$$callback = callback;
     }
 
-    public observe(target: Element) {
+    public observe(target: any) {
         const message = targetGuard('observe', target);
         if (message) {
             throw TypeError(message);
@@ -35,7 +35,7 @@ class ResizeObserver {
         registerResizeObserver(this);
     }
 
-    public unobserve(target: Element) {
+    public unobserve(target: any) {
         const message = targetGuard('unobserve', target);
         if (message) {
             throw TypeError(message);
@@ -82,7 +82,7 @@ function callbackGuard(callback: ResizeObserverCallback) {
     }
 }
 
-function targetGuard(functionName: string, target: Element | null | undefined) {
+function targetGuard(functionName: string, target: any | null | undefined) {
     if (typeof(target) === 'undefined') {
         return `Failed to execute '${functionName}' on 'ResizeObserver': 1 argument required, but only 0 present.`;
     }
@@ -91,7 +91,7 @@ function targetGuard(functionName: string, target: Element | null | undefined) {
     }
 }
 
-function findTargetIndex(collection: ResizeObservation[], target: Element) {
+function findTargetIndex(collection: ResizeObservation[], target: any) {
     for (let index = 0; index < collection.length; index += 1) {
         if (collection[index].target === target) {
             return index;

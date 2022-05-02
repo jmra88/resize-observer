@@ -1,7 +1,7 @@
 import { ContentRect } from './ContentRect';
 
 class ResizeObservation {
-    public readonly target: Element;
+    public readonly target: any;
 
     /** @internal */
     public $$broadcastWidth: number;
@@ -15,7 +15,7 @@ class ResizeObservation {
         return this.$$broadcastHeight;
     }
 
-    constructor(target: Element) {
+    constructor(target: any) {
         this.target = target;
         this.$$broadcastWidth = this.$$broadcastHeight = 0;
     }

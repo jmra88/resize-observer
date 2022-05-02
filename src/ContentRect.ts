@@ -5,7 +5,7 @@ interface ContentRect {
     width: number;
 }
 
-const ContentRect = (target: Element): Readonly<ContentRect> => {
+const ContentRect = (target: any): Readonly<ContentRect> => {
     if ('getBBox' in (target as SVGGraphicsElement)) {
         const box = (target as SVGGraphicsElement).getBBox();
         return Object.freeze({
