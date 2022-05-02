@@ -24,11 +24,11 @@ This library aims to be a faithful implementation and [ponyfill](https://ponyfil
 `resize-observer` is available on NPM and Yarn:
 
 ```shell
-> npm install resize-observer
+> npm install @jmra88/resize-observer
 ```
 
 ```shell
-> yarn add resize-observer
+> yarn add @jmra88/resize-observer
 ```
 
 # Setup

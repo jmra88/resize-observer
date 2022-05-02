@@ -1,5 +1,5 @@
 {
-  "name": "resize-observer",
+  "name": "@jmra88/resize-observer",
   "version": "1.0.4",
   "description": "An implementation and polyfill of the Resize Observer draft.",
   "main": "lib/ResizeObserver.js",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pelotoncycle/resize-observer.git"
+    "url": "git+https://github.com/jmra88/resize-observer.git"
   },
   "keywords": [
     "ResizeObserver",
@@ -30,9 +30,9 @@
   "author": "Mike Deverell <mike@onepeloton.com>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/pelotoncycle/resize-observer/issues"
+    "url": "https://github.com/jmra88/resize-observer/issues"
   },
-  "homepage": "https://github.com/pelotoncycle/resize-observer#readme",
+  "homepage": "https://github.com/jmra88/resize-observer#readme",
   "browserify": {
     "standalone": "ResizeObserver",
     "transform": [
@@ -71,5 +71,10 @@
     "tslint": "^5.11.0",
     "typescript": "^3.0.1",
     "uglify-es": "^3.3.9"
-  }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {}
 }
