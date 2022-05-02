@@ -38,7 +38,7 @@ This library aims to be a faithful implementation and [ponyfill](https://ponyfil
 `resize-observer` does not install itself by default. As such, you can import it like any other module:
 
 ```ts
-import { ResizeObserver } from 'resize-observer';
+import { ResizeObserver } from '@jmra88/resize-observer'
 
 const ro = new ResizeObserver(() => console.log('resize observed!'));
 ro.observe(document.body);
