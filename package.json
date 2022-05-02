@@ -12,7 +12,7 @@
     "clean": "rm -rf coverage dist lib",
     "coveralls": "yarn test-cov -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
     "lint": "tslint -c tslint.json 'src/**/*.ts' 'test/**/*.js' && echo Lint passed.",
-    "test": "yarn lint && yarn build && mocha",
+    "test": "yarn build && mocha",
     "test-cov": "istanbul cover _mocha",
     "prepack": "yarn test",
     "preversion": "yarn test"
