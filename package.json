@@ -1,6 +1,6 @@
 {
   "name": "@jmra88/resize-observer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "An implementation and polyfill of the Resize Observer draft.",
   "main": "lib/ResizeObserver.js",
   "unpkg": "dist/resize-observer.min.js",
